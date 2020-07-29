@@ -1,0 +1,37 @@
+{
+  "name": "hamisystem-test-mahyar-shabani",
+  "version": "1.0.0",
+  "description": "hamisystem-test-mahyar-shabani",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "author": "Mahyar Shabani",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^4.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "style-loader": "^1.2.1",
+    "extract-loader": "^2.0.1",
+    "file-loader": "^2.0.0",
+    "node-sass": "^4.9.3",
+    "postcss-cli": "^6.0.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.44.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "babel-polyfill": "^6.26.0",
+    "bootstrap": "^4.5.0"
+  }
+}

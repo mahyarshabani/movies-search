@@ -1,0 +1,154 @@
+$breakpoint-mobile: "only screen and (max-width : 575px)";
+$breakpoint-tablet: "only screen and (min-width: 576px) and (max-width: 767px)";
+$breakpoint-laptop: "only screen and (min-width: 768px)";
+$breakpoint-l-desktop: "only screen and (min-width: 992px)";
+$breakpoint-xl-desktop: "only screen and (min-width: 1200px)";
+
+html {
+  font-size: 14px;
+  @media #{$breakpoint-tablet} {
+    font-size: 16px;
+  }
+
+  @media #{$breakpoint-laptop} {
+    font-size: 18px;
+  }
+  @media #{$breakpoint-l-desktop} {
+    font-size: 20px;
+  }
+}
+
+a, p, span {
+  text-decoration: none !important;
+  color: grey;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+.search {
+  position: relative;
+
+  .search__input {
+    padding: 1em 1em 1em 4em;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 1px 1px 3px 1px rgba(1, 1, 1, 0.11);
+    width: 100%;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 1rem;
+    color: grey;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.movie {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  &__pic {
+    height: 200px;
+    width: 100%;
+    border-radius: 1rem;
+    background: grey;
+
+    img {
+      object-fit: cover;
+      object-position: top;
+      box-shadow: 1px 1px 3px 1px rgba(1, 1, 1, 0.40);
+      border-radius: 1rem;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  &__year {
+    text-align: center;
+  }
+
+  &__type {
+    text-align: center;
+  }
+}
+
+.pagination {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  > span {
+    box-shadow: 1px 1px 3px 1px rgba(1, 1, 1, 0.40);
+    border-radius: 2rem;
+    margin: .3rem;
+    padding: .3rem;
+    flex-basis: 6rem;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      transition: all ease-in-out .2s;
+      box-shadow: 1px 1px 3px 1px rgba(1, 1, 1, 1);
+    }
+  }
+}
+
+.movie-detail {
+  &__pic {
+    height: 500px;
+    width: 100%;
+    border-radius: 1rem;
+    background: grey;
+
+    img {
+      object-fit: cover;
+      object-position: top;
+      box-shadow: 1px 1px 3px 1px rgba(1, 1, 1, 0.40);
+      border-radius: 1rem;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.rating {
+  &__des {
+    display: flex;
+  }
+
+  &__name {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  &__percent {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  &__total {
+    height: 30px;
+    width: 100%;
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 10px;
+
+    overflow: hidden;
+  }
+
+  &__completed {
+    height: 100%;
+    width: 50%;
+    background-color: grey;
+  }
+}
